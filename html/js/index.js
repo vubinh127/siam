@@ -12,6 +12,12 @@ $(document).ready(function(){
 		items:1,
 	});
 
+	$(".testimonial-carousel").owlCarousel({
+		loop:true,
+		nav:true,
+		items:1,
+	});
+
 })
 
 $(window).scroll(function() {
