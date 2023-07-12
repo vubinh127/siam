@@ -6,6 +6,16 @@
   max-width: 1366px;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -1538,5 +1548,232 @@ h3 {
 
   .competative-edges .column2-wrapper .inner-col:nth-child(2) {
     width: 690px;
+  }
+}
+
+/*/////////// what we do  //////////// */
+ul.what-we-do-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+ul.what-we-do-list li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-bottom: 1rem;
+}
+
+ul.what-we-do-list li .info-wrapper {
+  background: #f1f1f1;
+  box-shadow: 0px 12px 40px rgba(6, 28, 61, 0.04);
+  position: relative;
+  width: 50%;
+  height: 230px;
+  width: 100%;
+}
+
+ul.what-we-do-list li .info-wrapper figure {
+  width: 50%;
+  height: 230px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+ul.what-we-do-list li .info-wrapper figcaption {
+  padding: 15px 15px 15px 54%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+}
+
+ul.what-we-do-list li .info-wrapper figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+
+ul.what-we-do-list li .info-wrapper figcaption .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  justify-content: flex-start;
+}
+
+ul.what-we-do-list li .info-wrapper figcaption .title,
+ul.what-we-do-list li .info-wrapper figcaption p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+ul.what-we-do-list li .info-wrapper figcaption .title,
+ul.what-we-do-list li .info-wrapper figcaption p.title {
+  font-weight: 700;
+}
+
+ul.what-we-do-list li .info-wrapper figure:hover img {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 996px) {
+  ul.what-we-do-list li {
+    flex-direction: row;
+    margin-bottom: 1.875rem;
+  }
+
+  ul.what-we-do-list li .info-wrapper {
+    height: 240px;
+    width: 50%;
+  }
+
+  ul.what-we-do-list li .info-wrapper figure {
+    height: 240px;
+  }
+
+  ul.what-we-do-list li .info-wrapper figcaption {
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  ul.what-we-do-list li .info-wrapper {
+    height: 310px;
+  }
+
+  ul.what-we-do-list li .info-wrapper figure {
+    height: 310px;
+  }
+
+  ul.what-we-do-list li .info-wrapper figcaption {
+    padding: 15px 15px 15px 52.5%;
+    height: 310px;
+  }
+
+  ul.what-we-do-list li .info-wrapper figcaption .info {
+    gap: 12px;
+  }
+
+  ul.what-we-do-list li .info-wrapper figcaption .title,
+  ul.what-we-do-list li .info-wrapper figcaption p {
+    font-size: 15px;
+  }
+
+  ul.what-we-do-list li:nth-child(even) .info-wrapper figure {
+    right: 0;
+    left: inherit;
+  }
+
+  ul.what-we-do-list li:nth-child(even) .info-wrapper figcaption {
+    padding: 15px 52.5% 15px 15px;
+  }
+}
+
+/*///////// DEstinantion ////////// */
+.destination-list .card {
+  margin-bottom: 10px;
+}
+
+.destination-list a:hover .card img {
+  transform: scale(1.2);
+}
+
+.destination-list .card figure {
+  overflow: hidden;
+  height: 196px;
+}
+
+.destination-list .card .card-img-top {
+  width: 100%;
+  height: 196px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 14px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 996px) {
+  .destination-list .card figure {
+    overflow: hidden;
+    height: 130px;
+  }
+
+  .destination-list .card .card-img-top {
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destination-list .card figure {
+    overflow: hidden;
+    height: 244px;
+  }
+
+  .destination-list .card .card-img-top {
+    height: 100%;
+  }
+}
+
+.contact-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 16px 72px rgba(6, 28, 61, 0.08);
+  margin: 1.5rem auto 1.5rem;
+  padding: 1.563rem 1.5rem 2.375rem;
+  width: 100%;
+}
+
+.contact-wrapper h4 {
+  font-family: "Helvetica";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 14px;
+}
+
+.contact-wrapper .pdbtm {
+  margin-bottom: 1.5rem;
+}
+
+.contact-wrapper p {
+  margin-bottom: 12px;
+}
+
+.contact-wrapper ul {
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  display: block;
+}
+
+@media screen and (min-width: 996px) {
+  .contact-wrapper {
+    padding: 1.563rem 1.5rem;
+  }
+
+  .contact-wrapper ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-wrapper {
+    padding: 1.563rem 3rem;
+    width: 872px;
   }
 }
